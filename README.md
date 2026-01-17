@@ -1,6 +1,10 @@
-# X.com Customizer
+<p align="center">
+  <img src="icons/icon.png" alt="X.com Customizer" width="400">
+</p>
 
-A browser extension that lets you hide unwanted UI elements on X.com (Twitter), giving you a cleaner, more focused experience.
+<h1 align="center">X.com Customizer</h1>
+
+<p align="center">A browser extension that lets you hide unwanted UI elements on X.com (Twitter), giving you a cleaner, more focused experience.</p>
 
 ## Features
 
@@ -68,6 +72,7 @@ x-customizer/
 ├── styles/
 │   └── hide.css           # CSS rules for hiding elements
 └── icons/
+    ├── icon.png
     ├── icon16.png
     ├── icon48.png
     └── icon128.png
