@@ -16,7 +16,9 @@ const SETTING_KEYS = [
   'hideTrends',
   'hideWhoToFollow',
   'hideSubscribeToPremium',
-  'hideFooter'
+  'hideFooter',
+  'hideFloatingGrok',
+  'hideFloatingMessages'
 ];
 
 function applySettings(settings) {

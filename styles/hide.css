@@ -114,3 +114,36 @@ body.x-customizer-hideFooter [data-testid="sidebarColumn"] nav:has(a[href*="tos"
 body.x-customizer-hideFooter [data-testid="sidebarColumn"] nav:has(a[href*="privacy"]) {
   display: none !important;
 }
+
+/* ==================== FLOATING BUTTONS (Right Side) ==================== */
+
+/* Floating Grok Button - the X logo button and its container on right side */
+body.x-customizer-hideFloatingGrok [data-testid="GrokDrawerHeader"],
+body.x-customizer-hideFloatingGrok [data-testid="grokImgButton"],
+body.x-customizer-hideFloatingGrok [data-testid="grokDrawer"],
+body.x-customizer-hideFloatingGrok [data-testid="GrokDrawer"],
+body.x-customizer-hideFloatingGrok div[class*="r-1xc7w19"]:has(button svg[viewBox="0 0 33 32"]),
+body.x-customizer-hideFloatingGrok button:has(svg[viewBox="0 0 33 32"]) {
+  display: none !important;
+}
+
+/* Floating Messages Button - messages icon and its container on right side */
+body.x-customizer-hideFloatingMessages [data-testid="DMDrawer"],
+body.x-customizer-hideFloatingMessages [data-testid="DMButton"],
+body.x-customizer-hideFloatingMessages [data-testid="dmDrawer"],
+body.x-customizer-hideFloatingMessages div.rounded-2xl:has(svg[data-icon="icon-messages-stroke"]) {
+  display: none !important;
+}
+
+/* ==================== EMPTY SIDEBAR CONTAINERS ==================== */
+
+/* Hide empty sticky sidebar wrapper when all content is hidden */
+body.x-customizer-hideSearch.x-customizer-hideTrends.x-customizer-hideWhoToFollow.x-customizer-hideSubscribeToPremium.x-customizer-hideFooter [data-testid="sidebarColumn"] > div > div > div[style*="position"] {
+  display: none !important;
+}
+
+/* Hide placeholder/spacer divs that remain empty in sidebar */
+body.x-customizer-hideTrends.x-customizer-hideWhoToFollow.x-customizer-hideSubscribeToPremium [data-testid="sidebarColumn"] section:empty,
+body.x-customizer-hideTrends.x-customizer-hideWhoToFollow.x-customizer-hideSubscribeToPremium [data-testid="sidebarColumn"] aside:empty {
+  display: none !important;
+}
