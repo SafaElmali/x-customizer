@@ -1,0 +1,116 @@
+/* X.com Customizer - Hide Elements CSS */
+/* Uses data-testid, href, and :has() for language-independent targeting */
+
+/* ==================== LEFT SIDEBAR ==================== */
+
+/* Home */
+body.x-customizer-hideHome [data-testid="AppTabBar_Home_Link"],
+body.x-customizer-hideHome nav a[href="/home"] {
+  display: none !important;
+}
+
+/* Explore */
+body.x-customizer-hideExplore [data-testid="AppTabBar_Explore_Link"],
+body.x-customizer-hideExplore nav a[href="/explore"] {
+  display: none !important;
+}
+
+/* Notifications */
+body.x-customizer-hideNotifications [data-testid="AppTabBar_Notifications_Link"],
+body.x-customizer-hideNotifications nav a[href="/notifications"] {
+  display: none !important;
+}
+
+/* Messages */
+body.x-customizer-hideMessages [data-testid="AppTabBar_DirectMessage_Link"],
+body.x-customizer-hideMessages nav a[href="/messages"] {
+  display: none !important;
+}
+
+/* Grok */
+body.x-customizer-hideGrok [data-testid="AppTabBar_Grok_Link"],
+body.x-customizer-hideGrok nav a[href="/i/grok"] {
+  display: none !important;
+}
+
+/* Lists */
+body.x-customizer-hideLists nav a[href$="/lists"] {
+  display: none !important;
+}
+
+/* Bookmarks */
+body.x-customizer-hideBookmarks nav a[href="/i/bookmarks"] {
+  display: none !important;
+}
+
+/* Communities */
+body.x-customizer-hideCommunities nav a[href$="/communities"] {
+  display: none !important;
+}
+
+/* Premium */
+body.x-customizer-hidePremium nav a[href="/i/premium_sign_up"],
+body.x-customizer-hidePremium nav a[href*="/i/verified-choose"],
+body.x-customizer-hidePremium nav a[href*="/premium"] {
+  display: none !important;
+}
+
+/* Verified Orgs */
+body.x-customizer-hideVerifiedOrgs nav a[href*="/i/verified-orgs-signup"],
+body.x-customizer-hideVerifiedOrgs nav a[href*="verified_orgs"] {
+  display: none !important;
+}
+
+/* Profile */
+body.x-customizer-hideProfile [data-testid="AppTabBar_Profile_Link"],
+body.x-customizer-hideProfile [data-testid="SideNav_AccountSwitcher_Button"] {
+  display: none !important;
+}
+
+/* More menu */
+body.x-customizer-hideMore [data-testid="AppTabBar_More_Menu"] {
+  display: none !important;
+}
+
+/* Creator Studio */
+body.x-customizer-hideCreatorStudio nav a[href*="creator"],
+body.x-customizer-hideCreatorStudio nav a[href*="monetization"],
+body.x-customizer-hideCreatorStudio nav a[href*="studio"] {
+  display: none !important;
+}
+
+/* ==================== RIGHT SIDEBAR ==================== */
+
+/* Search Bar */
+body.x-customizer-hideSearch [data-testid="sidebarColumn"] form[role="search"],
+body.x-customizer-hideSearch [data-testid="sidebarColumn"] [data-testid="SearchBox_Search_Input"] {
+  display: none !important;
+}
+
+/* Trends / What's Happening - hide the entire section */
+body.x-customizer-hideTrends [data-testid="sidebarColumn"] section:has([data-testid="trend"]),
+body.x-customizer-hideTrends [data-testid="sidebarColumn"] aside:has([data-testid="trend"]),
+body.x-customizer-hideTrends [data-testid="sidebarColumn"] div:has(> div > section [data-testid="trend"]) > div > section {
+  display: none !important;
+}
+
+/* Who to Follow - hide the entire section */
+body.x-customizer-hideWhoToFollow [data-testid="sidebarColumn"] section:has([data-testid="UserCell"]),
+body.x-customizer-hideWhoToFollow [data-testid="sidebarColumn"] aside:has([data-testid="UserCell"]),
+body.x-customizer-hideWhoToFollow [data-testid="sidebarColumn"] div:has(> div > section [data-testid="UserCell"]) > div > section {
+  display: none !important;
+}
+
+/* Subscribe to Premium - hide the entire section */
+body.x-customizer-hideSubscribeToPremium [data-testid="sidebarColumn"] aside:has(a[href*="premium"]),
+body.x-customizer-hideSubscribeToPremium [data-testid="sidebarColumn"] section:has(a[href*="premium"]):not(:has([data-testid="trend"])):not(:has([data-testid="UserCell"])),
+body.x-customizer-hideSubscribeToPremium [data-testid="sidebarColumn"] div[data-testid="placementTracking"]:has(a[href*="premium"]) {
+  display: none !important;
+}
+
+/* Footer Links */
+body.x-customizer-hideFooter [data-testid="sidebarColumn"] nav[aria-label="Footer"],
+body.x-customizer-hideFooter [data-testid="sidebarColumn"] nav:has(a[href*="tos"]),
+body.x-customizer-hideFooter [data-testid="sidebarColumn"] nav:has(a[href*="privacy"]) {
+  display: none !important;
+}
