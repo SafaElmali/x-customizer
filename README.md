@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icons/icon.png" alt="X.com Customizer" width="400">
+  <img src="images/cover.png" alt="X.com Customizer" width="auto">
 </p>
 
 <h1 align="center">X.com Customizer</h1>
